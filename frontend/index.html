@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/boostrap/css/bootstrap.min.css">
+</head>
+<body>
+<header class="row navHeader">
+    <div class="col-2 bg-primary  p-3">
+        <h3 class="ms-5 text-warning fs-1">Kells <span class="text-success fs-3">Shop</span></h3>
+
+    </div>
+
+        <nav class="col-4 bg-success p-4">
+            <ul class="nav">
+
+                <li class="nav-item"><a  class="nav-link text-dark"href="#">HOME</a></li>
+                <li class="nav-item"><a  class="nav-link text-dark"href="#">CUSTOMER</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">ITEM</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">ORDER</a></li>
+
+            </ul>
+        </nav>
+
+    <div class="col p-4 text-end">
+        <button class="btn btn-outline-dark">Log Out</button>
+    </div>
+</header>
+
+
+
+<!--view Customer Start -->
+<main id="cuView">
+    <section class="row container-fluid">
+        <nav class=" mt-5 col col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2  ">
+            <h3 class="display-5 text-center mt-4">CUSTOMER</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Add Customer</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Update Customer</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Delete Customer</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">View Customer</a></li>
+            </ul>
+        </nav>
+        <section class="mt-5 col border-start border-dark border-1">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-2">
+                <h2 class="text-center text-black">VIEW CUSTOMERS</h2>
+            </div>
+
+            <table class="table">
+                <thead class="table-dark">
+                <tr>
+                    <th >Ref No</th>
+                    <th >Title</th>
+                    <th>Customer Name</th>
+                    <th >NIC</th>
+                    <th >Address</th>
+                    <th >Tel</th>
+                    <th >Job</th>
+                    <th class="text-center">Action</th>
+
+                </tr>
+                </thead>
+                <tr>
+                    <td>001</td>
+                    <td>Mr.</td>
+                    <td>Saman Perera</td>
+                    <td>89340043v</td>
+                    <td>Colombo</td>
+                    <td>07843934</td>
+                    <td>Doctor</td>
+                    <td class="text-center"><button class="btn"><img src="../assets/images/delete-64px.png" class="h-50 w-50"/></button><button class="btn"><img src="../assets/images/update-64px.png" class="h-50 w-50"/></button></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Mr.</td>
+                    <td>Saman Perera</td>
+                    <td>893456043v</td>
+                    <td>Colombo</td>
+                    <td>07843934</td>
+                    <td>Doctor</td>
+                    <td class="text-center"><button class="btn"><img src="../assets/images/delete-64px.png" class="h-50 w-50"/></button><button class="btn"><img src="../assets/images/update-64px.png" class="h-50 w-50"/></button></td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Mr.</td>
+                    <td>Saman Perera</td>
+                    <td>4577043v</td>
+                    <td>Colombo</td>
+                    <td>07843934</td>
+                    <td>Doctor</td>
+                    <td class="text-center"><button class="btn"><img src="../assets/images/delete-64px.png" class="h-50 w-50"/></button><button class="btn"><img src="../assets/images/update-64px.png" class="h-50 w-50"/></button></td>
+                </tr>
+            </table>
+            <section class="shadow-lg row pt-5">
+                <h5 class="col-3">Active - <span>03</span></h5>
+                <h5 class="col-3">Pending - <span>00</span></h5>
+                <h5 class="col-3">Draft - <span>05</span></h5>
+                <h5 class="col-3">Deactive - <span>02</span></h5>
+            </section>
+        </section>
+    </section>
+
+
+
+    </select>
+
+</main>
+<!--view Customer End -->
+<!--Update Customer Start -->
+<main id="cuUpdate">
+    <section class="row container-fluid">
+        <nav class=" mt-5 col col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2  ">
+            <h3 class="display-5 text-center mt-4">Customer</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Add Customer</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Update Customer</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Delete Customer</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">View Customer</a></li>
+            </ul>
+        </nav>
+        <section class="mt-5 col border-start border-dark border-1">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-2">
+                <h2 class="text-center text-black">UPDATE CUSTOMER</h2>
+            </div>
+
+            <form class="mt-5" action="" method="post">
+                <ul>
+
+                    <div class="row" >
+                        <li class="mt-2">
+                            <div>
+                                <lable class="mt-5">Customer &nbsp; &nbsp; Title:</lable>
+
+                                <select class="ms-4 mb-2">
+                                    <option>Mr.</option>
+                                    <option>Mrs.</option>
+                                    <option>Miss.</option>
+                                    <option>Ms.</option>
+
+                                </select>
+
+                            </div>
+
+
+                        </li>
+                    </div>
+
+                    <div class="row align-items-center pt-1 pb-1">
+                        <li>
+
+                            <label>Customer Name :</label>
+                            <input class="ms-4" size="59" type="text">
+                        </li>
+                    </div>
+
+                    <div class="row">
+                        <li class="mt-4 col-4">
+                            <lable>Customer NIC No:</lable>
+                            <input type="text" class="ms-3">
+                        </li>
+                        <li class="mt-4 col">
+                            <label class=""for="brandName">City:</label>
+                            <input class="ms-3 " type="text">
+                        </li>
+                    </div>
+                    <div class="row">
+                        <li class="mt-4 col-4">
+                            <label for="modelNumber">Customer E-mail :</label>
+                            <input class="ms-3 " size="12" type="text">
+                        </li>
+                        <li class="mt-4 col">
+                            <label for="price">Job:</label>
+                            <input class="ms-3" type="text">
+
+                        </li>
+                    </div>
+                    <div class=" row">
+                        <li class="mt-4 col-4 ">
+                            <label for="size"> Customer Address :</label>
+
+                            <input class="ms" size="12" type="text">
+                            <div class="ms-5">
+                                <div class="ms-5">
+                                    <input size="12" class="mt-1 ms-5"type="text">
+                                </div>
+                            </div>
+                            <div class="ms-5">
+                                <div class="ms-5">
+                                    <input size="12" class="mt-1 ms-5"type="text">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col mt-4">
+                            <label>Tel No</label>
+                            <input type="text">
+                            <div class="ms-5 mt-1">
+                                <input type="text">
+                            </div>
+
+                        </li>
+                    </div>
+                </ul>
+
+                <section class="mt-5  text-end mb-4 me-5">
+                    <button class="btn btn-outline-danger me-4" type="reset">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Update</button>
+                </section>
+            </form>
+        </section>
+    </section>
+
+    <!--new-->
+    <section class="row">
+        <aside class="bg-primary col"></aside>
+        <section class=""></section>
+    </section>
+
+
+</main>
+<!--Update Customer End -->
+<!--Delete Customer Start -->
+<main id="cuDelete">
+    <section class="row container-fluid">
+        <nav class=" mt-5 col col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2  ">
+            <h3 class="display-5 text-center mt-4">Customer</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Add Customer</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Update Customer</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Delete Customer</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">View Customer</a></li>
+            </ul>
+        </nav>
+        <section class="mt-5 col border-start border-dark border-1">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-2">
+                <h2 class="text-center text-black">DELETE CUSTOMER</h2>
+            </div>
+
+            <form class="mt-5" action="" method="post">
+                <ul>
+
+                    <div class="row" >
+                        <li class="mt-2">
+                            <div>
+                                <lable class="mt-5">Customer &nbsp; &nbsp; Title:</lable>
+
+                                <select class="ms-4 mb-2">
+                                    <option>Mr.</option>
+                                    <option>Mrs.</option>
+                                    <option>Miss.</option>
+                                    <option>Ms.</option>
+
+                                </select>
+
+                            </div>
+
+
+                        </li>
+                    </div>
+
+                    <div class="row align-items-center pt-1 pb-1">
+                        <li>
+
+                            <label>Customer Name :</label>
+                            <input class="ms-4" size="59" type="text">
+                        </li>
+                    </div>
+
+                    <div class="row">
+                        <li class="mt-4 col-4">
+                            <lable>Customer NIC No:</lable>
+                            <input type="text" class="ms-3">
+                        </li>
+                        <li class="mt-4 col">
+                            <label class=""for="brandName">City:</label>
+                            <input class="ms-3 " type="text">
+                        </li>
+                    </div>
+                    <div class="row">
+                        <li class="mt-4 col-4">
+                            <label for="modelNumber">Customer E-mail :</label>
+                            <input class="ms-3 " size="12" type="text">
+                        </li>
+                        <li class="mt-4 col">
+                            <label for="price">Job:</label>
+                            <input class="ms-3" type="text">
+
+                        </li>
+                    </div>
+                    <div class=" row">
+                        <li class="mt-4 col-4 ">
+                            <label for="size"> Customer Address :</label>
+
+                            <input class="ms" size="12" type="text">
+                            <div class="ms-5">
+                                <div class="ms-5">
+                                    <input size="12" class="mt-1 ms-5"type="text">
+                                </div>
+                            </div>
+                            <div class="ms-5">
+                                <div class="ms-5">
+                                    <input size="12" class="mt-1 ms-5"type="text">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col mt-4">
+                            <label>Tel No</label>
+                            <input type="text">
+                            <div class="ms-5 mt-1">
+                                <input type="text">
+                            </div>
+
+                        </li>
+                    </div>
+                </ul>
+
+                <section class="mt-5  text-end mb-4 me-5">
+                    <button class="btn btn-outline-danger me-4" type="reset">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Delete</button>
+                </section>
+            </form>
+        </section>
+    </section>
+
+    <!--new-->
+    <section class="row">
+        <aside class="bg-primary col"></aside>
+        <section class=""></section>
+    </section>
+
+
+</main>
+<!--Delete Customer End -->
+<!--Add Customer Start -->
+<main id="cuAdd">
+    <section class="row container-fluid">
+        <nav class=" mt-5 col col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2  ">
+            <h3 class="display-5 text-center mt-4">Customer</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Add Customer</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Update Customer</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Delete Customer</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">View Customer</a></li>
+            </ul>
+        </nav>
+        <section class="mt-5 col border-start border-dark border-1">
+            <div class="shadow-lg p-3 mb-5  rounded mt-2  bg-success">
+                <h2 class="text-center text-white">ADD NEW CUSTOMER</h2>
+            </div>
+
+            <form class="mt-5" action="" method="post">
+                <ul>
+
+                    <div class="row" >
+                        <li class="mt-2">
+                            <div>
+                                <lable class="mt-5">Customer &nbsp; &nbsp; Title:</lable>
+
+                                <select class="ms-4 mb-2">
+                                    <option>Mr.</option>
+                                    <option>Mrs.</option>
+                                    <option>Miss.</option>
+                                    <option>Ms.</option>
+
+                                </select>
+
+                            </div>
+
+
+                        </li>
+                    </div>
+
+                    <div class="row align-items-center pt-1 pb-1">
+                        <li>
+
+                            <label>Customer Name :</label>
+                            <input class="ms-4" size="59" type="text">
+                        </li>
+                    </div>
+
+                    <div class="row">
+                        <li class="mt-4 col-4">
+                            <lable>Customer NIC No:</lable>
+                            <input type="text" class="ms-3">
+                        </li>
+                        <li class="mt-4 col">
+                            <label class=""for="brandName">City:</label>
+                            <input class="ms-3 " type="text">
+                        </li>
+                    </div>
+                    <div class="row">
+                        <li class="mt-4 col-4">
+                            <label for="modelNumber">Customer E-mail :</label>
+                            <input class="ms-3 " size="12" type="text">
+                        </li>
+                        <li class="mt-4 col">
+                            <label for="price">Job:</label>
+                            <input class="ms-3" type="text">
+
+                        </li>
+                    </div>
+                    <div class=" row">
+                        <li class="mt-4 col-4 ">
+                            <label for="size"> Customer Address :</label>
+
+                            <input class="ms" size="12" type="text">
+                            <div class="ms-5">
+                                <div class="ms-5">
+                                    <input size="12" class="mt-1 ms-5"type="text">
+                                </div>
+                            </div>
+                            <div class="ms-5">
+                                <div class="ms-5">
+                                    <input size="12" class="mt-1 ms-5"type="text">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col mt-4">
+                            <label>Tel No</label>
+                            <input type="text">
+                            <div class="ms-5 mt-1">
+                                <input type="text">
+                            </div>
+
+                        </li>
+                    </div>
+                </ul>
+
+                <section class="mt-5  text-end mb-4 me-5">
+                    <button class="btn btn-outline-danger me-4" type="reset">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </section>
+            </form>
+        </section>
+    </section>
+
+    <!--new-->
+    <section class="row">
+        <aside class="bg-primary col"></aside>
+        <section class=""></section>
+    </section>
+
+
+</main>
+<!--Add Customer End -->
+
+<!--view Item Start -->
+<main id="itView">
+    <section class="row container-fluid">
+        <nav class=" mt-5 col col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2  ">
+            <h3 class="display-5 text-center mt-4">ITEMS</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Add Item</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Update Item</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Delete Item</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">View Item</a></li>
+            </ul>
+        </nav>
+        <section class="mt-5 col border-start border-dark border-1">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-2">
+                <h2 class="text-center text-black">VIEW ITEMS</h2>
+            </div>
+
+            <table class="table">
+                <thead class="table-dark">
+                <tr>
+                    <th class="text-center">Ref No</th>
+                    <th class="text-center">Item Name</th>
+                    <th class="text-center">Category</th>
+                    <th class="text-center">Brand Name</th>
+                    <th class="text-center">Model Number</th>
+                    <th class="text-center">Price($)</th>
+                    <th class="text-center">Size(mm/cm)</th>
+                    <th class="text-center">Action</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>001</td>
+                    <td> 2022 Brande New Asus Laptop New</td>
+                    <td>Laptop</td>
+                    <td>Asus</td>
+                    <td>AS340XD</td>
+                    <td>499.00</td>
+                    <td>1200 x 1000 </td>
+                    <td><button class="btn"><img src="../assets/images/delete-64px.png" class="h-50 w-50"/></button><button class="btn"><img src="../assets/images/update-64px.png" class="h-50 w-50"/></button></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td> 2022 Brande New Asus Laptop New</td>
+                    <td>Laptop</td>
+                    <td>Asus</td>
+                    <td>AS340XD</td>
+                    <td>499.00</td>
+                    <td>1200 x 1000 </td>
+                    <td><button class="btn"><img src="../assets/images/delete-64px.png" class="h-50 w-50"/></button><button class="btn"><img src="../assets/images/update-64px.png" class="h-50 w-50"/></button></td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td> 2022 Brande New Asus Laptop New</td>
+                    <td>Laptop</td>
+                    <td>Asus</td>
+                    <td>AS340XD</td>
+                    <td>499.00</td>
+                    <td>1200 x 1000 </td>
+                    <td><button class="btn"><img src="../assets/images/delete-64px.png" class="h-50 w-50"/></button><button class="btn"><img src="../assets/images/update-64px.png" class="h-50 w-50"/></button></td>
+                </tr>
+            </table>
+            <section class="shadow-lg row pt-5">
+                <h5 class="col-3">Active - <span>03</span></h5>
+                <h5 class="col-3">Pending - <span>00</span></h5>
+                <h5 class="col-3">Draft - <span>05</span></h5>
+                <h5 class="col-3">Deactive - <span>02</span></h5>
+            </section>
+        </section>
+    </section>
+
+
+    <!--new-->
+
+
+    </select>
+
+</main>
+<!--view Item End -->
+<!--Update Item Start -->
+<main id="itUpdate">
+    <section class="row container-fluid">
+        <nav class=" mt-5 col col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2  ">
+            <h3 class="display-5 text-center mt-4">ITEMS</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Add Item</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Update Item</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Delete Item</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">View Item</a></li>
+            </ul>
+        </nav>
+        <section class="mt-5 col border-start border-dark border-1">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-2">
+                <h2 class="text-center text-black">UPDATE ITEM</h2>
+            </div>
+
+            <form class="mt-5" action="" method="post">
+                <ul>
+                    <div class="row align-items-center pt-1 pb-1">
+                        <li>
+                            <label for="itemName">Item Name :</label>
+                            <input class="ms-5" size="67" type="text">
+                        </li>
+                    </div>
+
+                    <div class="row ">
+                        <li class="mt-4 col-4">
+                            <lable for="itemCategory">Item Category :</lable>
+                            <select class="ms-4" >
+                                <option value="laptop">Laptop</option>
+                                <option value="desktop">Desktop</option>
+                            </select>
+                        </li>
+                        <li class="mt-4 col">
+                            <label class=""for="brandName">Brand Name :</label>
+                            <input class="ms-3 " type="text">
+                        </li>
+                    </div>
+                    <div class="row ">
+                        <li class="mt-4 col-4">
+                            <label for="modelNumber">Model Number :</label>
+                            <input class="ms-3 " size="12" type="text">
+                        </li>
+                        <li class="mt-4 col">
+                            <label for="price">Price($) :</label>
+                            <input class="ms-5" type="text" size="12"><span> . </h2></span>
+                            <input class="mt-2"type="text" size="1">
+                        </li>
+                    </div>
+                    <div class=" row">
+                        <li class="mt-4 ">
+                            <label for="size">Size  (mm/cm) :</label>
+                            <input class="ms-4 " size="1" type="text"><span> x </span>
+                            <input size="1" class="mt-2 "type="text"><span> x </span>
+                            <input size="1" class="mt-2 "type="text">
+                        </li>
+                    </div>
+                </ul>
+
+                <section class="mt-5  text-end mb-4 me-5">
+                    <button class="btn btn-outline-danger me-4" type="reset">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Update</button>
+                </section>
+            </form>
+        </section>
+    </section>
+
+    <!--new-->
+    <section class="row">
+        <aside class="bg-primary col"></aside>
+        <section class=""></section>
+    </section>
+
+
+</main>
+<!--Update Item End -->
+<!--Delete Item Start -->
+<main id="itDelete">
+    <section class="row container-fluid">
+        <nav class=" mt-5 col col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2  ">
+            <h3 class="display-5 text-center mt-4">ITEMS</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Add Item</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Update Item</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Delete Item</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">View Item</a></li>
+            </ul>
+        </nav>
+        <section class="mt-5 col border-start border-dark border-1">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-2">
+                <h2 class="text-center text-black">DELETE ITEM</h2>
+            </div>
+
+            <form class="mt-5" action="" method="post">
+                <ul>
+                    <div class="row align-items-center pt-1 pb-1">
+                        <li>
+                            <label for="itemName">Item Name :</label>
+                            <input class="ms-5" size="67" type="text">
+                        </li>
+                    </div>
+
+                    <div class="row ">
+                        <li class="mt-4 col-4">
+                            <lable for="itemCategory">Item Category :</lable>
+                            <select class="ms-4" >
+                                <option value="laptop">Laptop</option>
+                                <option value="desktop">Desktop</option>
+                            </select>
+                        </li>
+                        <li class="mt-4 col">
+                            <label class=""for="brandName">Brand Name :</label>
+                            <input class="ms-3 " type="text">
+                        </li>
+                    </div>
+                    <div class="row ">
+                        <li class="mt-4 col-4">
+                            <label for="modelNumber">Model Number :</label>
+                            <input class="ms-3 " size="12" type="text">
+                        </li>
+                        <li class="mt-4 col">
+                            <label for="price">Price($) :</label>
+                            <input class="ms-5" type="text" size="12"><span> . </h2></span>
+                            <input class="mt-2"type="text" size="1">
+                        </li>
+                    </div>
+                    <div class=" row">
+                        <li class="mt-4 ">
+                            <label for="size">Size  (mm/cm) :</label>
+                            <input class="ms-4 " size="1" type="text"><span> x </span>
+                            <input size="1" class="mt-2 "type="text"><span> x </span>
+                            <input size="1" class="mt-2 "type="text">
+                        </li>
+                    </div>
+                </ul>
+
+                <section class="mt-5  text-end mb-4 me-5">
+                    <button class="btn btn-outline-danger me-4" type="reset">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Delete</button>
+                </section>
+            </form>
+        </section>
+    </section>
+
+    <!--new-->
+    <section class="row">
+        <aside class="bg-primary col"></aside>
+        <section class=""></section>
+    </section>
+
+
+</main>
+<!--Delete Item End -->
+<!--Add Item Start -->
+<main id="itAdd">
+    <section class="row container-fluid">
+        <nav class=" mt-5 col col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2  ">
+            <h3 class="display-5 text-center mt-4">ITEMS</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Add Item</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Update Item</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">Delete Item</a></li>
+                <li class="nav-item"><a class="text-dark nav-link" href="#">View Item</a></li>
+            </ul>
+        </nav>
+        <section class="mt-5 col border-start border-dark border-1">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-2">
+                <h2 class="text-center text-black">ADD ITEM</h2>
+            </div>
+
+            <form class="mt-5" action="" method="post">
+                <ul>
+                    <div class="row align-items-center pt-1 pb-1">
+                        <li>
+                            <label for="itemName">Item Name :</label>
+                            <input class="ms-5" size="67" type="text">
+                        </li>
+                    </div>
+
+                    <div class="row ">
+                        <li class="mt-4 col-4">
+                            <lable for="itemCategory">Item Category :</lable>
+                            <select class="ms-4" >
+                                <option value="laptop">Laptop</option>
+                                <option value="desktop">Desktop</option>
+                            </select>
+                        </li>
+                        <li class="mt-4 col">
+                            <label class=""for="brandName">Brand Name :</label>
+                            <input class="ms-3 " type="text">
+                        </li>
+                    </div>
+                    <div class="row ">
+                        <li class="mt-4 col-4">
+                            <label for="modelNumber">Model Number :</label>
+                            <input class="ms-3 " size="12" type="text">
+                        </li>
+                        <li class="mt-4 col">
+                            <label for="price">Price($) :</label>
+                            <input class="ms-5" type="text" size="12"><span> . </h2></span>
+                            <input class="mt-2"type="text" size="1">
+                        </li>
+                    </div>
+                    <div class=" row">
+                        <li class="mt-4 ">
+                            <label for="size">Size  (mm/cm) :</label>
+                            <input class="ms-4 " size="1" type="text"><span> x </span>
+                            <input size="1" class="mt-2 "type="text"><span> x </span>
+                            <input size="1" class="mt-2 "type="text">
+                        </li>
+                    </div>
+                </ul>
+
+                <section class="mt-5  text-end mb-4 me-5">
+                    <button class="btn btn-outline-danger me-4" type="reset">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </section>
+            </form>
+        </section>
+    </section>
+
+    <!--new-->
+    <section class="row">
+        <aside class="bg-primary col"></aside>
+        <section class=""></section>
+    </section>
+
+
+</main>
+<!--Add Item End -->
+
+
+<!--Order Start-->
+<main id="order">
+    <section>
+        <section class="row  ps-5 bg-dark ">
+            <div class="col-4 ms-3 mt-3">
+                <h3 class="text-danger col">Order ID : <span class="text-white">#S001</span></h3>
+            </div>
+            <div class="col-3  ms-5 mt-3">
+                <h3 class="text-danger text-center">Date : <span class="text-white">2022/01/22</span></span2022></h3>
+            </div>
+            <div class="col-4 mt-3">
+                <h3 class="text-danger text-end">Time : <span class="text-white">22:17 a.m</span></h3>
+            </div>
+        </section>
+        <hr class="bg-white "/>
+        <section class="row bg-dark p-3">
+            <div><h1 class="text-white shadow-lg ms-4">Shipping Details :</h1></div>
+
+            <div class="col-2  mt-3">
+                <label class="text-white ps-4 pt-4">Customer NIC :</label>
+                <select>
+                    <option>991790381v</option>
+                    <option>200023323v</option>
+                    <option>344345455v</option>
+                    <option>459883443v</option>
+                    <option>234744323v</option>
+                </select>
+            </div>
+            <div class="col-3  mt-3">
+                <label class="text-white pt-4">Customer Name :</label>
+                <input  class=" mt-4" type="text" size="17">
+            </div>
+            <div class="col-3  mt-3">
+                <label class="text-white mt-4 ms-2">Shipping Address :</label>
+                <input type="text" class="mt-4 me-3">
+                <div class="ms-5">
+                    <div class="ms-5">
+                        <input type="text" class="me-3 ms-5 mt-1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2  mt-3">
+                <label class="text-white mt-4 ms-4">City :</label>
+                <input type="text" class="mt-4 me-4" size="12">
+            </div>
+            <div class="col  mt-3">
+                <lable class="text-white mt-4">Postal Code :</lable>
+                <input type="text" class="mt-4" size="9">
+            </div>
+
+        </section>
+        <div class="row"><div class="col bg-dark text-end pb-4"><button class="btn btn-outline-success me-5">Reset</button></div></div>
+
+    </section>
+
+    <section>
+        <section class="row">
+            <div class="bg-dark">
+                <h1 class="ms-5 shadow-lg text-white">Item Select :</h1>
+            </div>
+            <div class="bg-dark col-2">
+                <label class="mt-3 ms-5 text-white">Item Code :</label>
+                <select>
+                    <option>I001</option>
+                    <option>I002</option>
+                    <option>I003</option>
+                    <option>I004</option>
+                    <option>I005</option>
+                </select>
+            </div>
+            <div class="col-3 bg-dark">
+                <label class="mt-3 text-white">Item Name :</label>
+                <label class="mt-3 text-white"> New Milo 250g</label>
+            </div>
+            <div class="col-2 bg-dark">
+                <label class="mt-3 text-white">Unit Price($) :</label>
+                <label class="mt-3 text-white">250.00</label>
+            </div>
+            <div class="col-2 bg-dark">
+                <label class="mt-3 text-white">Available  qty :</label>
+                <label class="mt-3 text-white">434</label>
+            </div>
+            <div class="col-3 bg-dark">
+                <label class="mt-3 text-white">Qty :</label>
+                <input type="text">
+            </div>
+
+        </section>
+        <div  class=" row bg-dark">
+            <div class="col mt-5 mb-5 text-end me-5">
+                <button class="btn btn-outline-danger me-3">Clear</button>
+                <button class="btn btn-primary">Add Item</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="row bg-dark">
+        <div class=" col-7 bg-dark ">
+            <table class="table ms-5">
+                <thead class="table-success">
+                <tr>
+                    <th >No</th>
+                    <th>Name</th>
+                    <th >Qty</th>
+                    <th >Unit Price($)</th>
+                    <th >Total($)</th>
+                    <th class="text-center">Action</th>
+                </tr>
+                </thead>
+                <tr class="text-white">
+                    <td>001</td>
+                    <td>New Milo 250g</td>
+                    <td>2</td>
+                    <td>250.00</td>
+                    <td>500.00</td>
+                    <td class="text-center"><button class="btn btn-outline-danger">Drop</button><button class="btn btn-outline-warning ms-3">Update</button></td>
+                </tr>
+                <tr class="text-white">
+                    <td>002</td>
+                    <td>New Milo 250g</td>
+                    <td>2</td>
+                    <td>250.00</td>
+                    <td>500.00</td>
+                    <td class="text-center"><button class="btn btn-outline-danger">Drop</button><button class="btn btn-outline-warning ms-3">Update</button></td>
+                </tr>
+                <tr class="text-white">
+                    <td>003</td>
+                    <td>New Milo 250g</td>
+                    <td>2</td>
+                    <td>250.00</td>
+                    <td>500.00</td>
+                    <td class="text-center"><button class="btn btn-outline-danger">Drop</button><button class="btn btn-outline-warning ms-3">Update</button></td>
+                </tr>
+                <tr class="text-white">
+                    <td>004</td>
+                    <td>New Milo 250g</td>
+                    <td>2</td>
+                    <td>250.00</td>
+                    <td>500.00</td>
+                    <td class="text-center"><button class="btn btn-outline-danger">Drop</button><button class="btn btn-outline-warning ms-3">Update</button></td>
+                </tr>
+                <tr class="text-white">
+                    <td>005</td>
+                    <td>New Milo 250g</td>
+                    <td>2</td>
+                    <td>250.00</td>
+                    <td>500.00</td>
+                    <td class="text-center"><button class="btn btn-outline-danger">Drop</button><button class="btn btn-outline-warning ms-3">Update</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-5 bg-secondary border-top-3">
+            <div class="row">
+                <div class=" text-center text-white bg-primary shadow-lg"><h3 class="mt-1">Order Summary</h3></div>
+
+                <div class="col  mt-5">
+                    <h2>Total($) : <span class="text-white">340.00</span> </h2>
+                </div>
+                <div class="col  mt-5">
+                    <h2>Sub Total($) : <span class="text-white">300.00</span></h2>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col mt-5">
+                    <lable>Cash($) :</lable>
+                    <input type="text">
+                </div>
+                <div class="col mt-5">
+                    <lable>Balance :</lable>
+                    <input type="text">
+                </div>
+                <div class="row">
+                    <div class="col mt-5 text-end  me-3">
+                        <button class="btn btn-outline-danger">Clear</button>
+                        <button class="btn btn-primary ms-3">Purchase</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+<!--Order End-->
+
+<script src="./script.js"></script>
+</body>
+
+
+</html>
